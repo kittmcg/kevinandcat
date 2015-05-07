@@ -1,9 +1,10 @@
 $(document).ready(function() {
 
-  var nav = $("#navigation")
+  var nav = $("#navigation");
 
   nav.hide();
-  $("#mobile-nav-toggle").on("click", function() {
+  $("#mobile-nav-toggle, #navigation li a").on("click", function() {
     nav.slideToggle("fast");
   });
+
 });
