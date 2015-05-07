@@ -182,14 +182,21 @@ a:hover {
 }
 
 .hamburger {
-  float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
   padding: 20px;
+  z-index: 1000;
 }
 
 .navigation {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 100%;
+  min-height: 73px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -202,6 +209,18 @@ a:hover {
 
 .navigation ul li:first-of-type {
     padding-left: 0px;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    justify-content: left;
+    text-align: left;
+  }
+
+  .navigation ul li {
+    display: list-item;
+    padding: 10px 0;
+  }
 }
 
 /* ==========================================================================
