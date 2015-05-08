@@ -20,6 +20,11 @@ html, body {
   height: 100%;
   font-family: "acta-display", serif;
   font-size: 16px;
+  font-variant-ligatures: common-ligatures;
+  -moz-font-feature-settings: "liga", "clig";
+  -ms-font-feature-settings: "liga", "clig";
+  -webkit-font-feature-settings: "liga", "clig";
+  font-feature-settings: "liga", "clig";
 }
 
 h1 {
@@ -51,6 +56,18 @@ p {
 .accent {
   font-style: italic;
   color: rgba(255,255,255,0.5);
+}
+
+@media screen and (min-width: 601px) and (max-width: 800px) {
+   h1 {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 
 /*
@@ -237,7 +254,7 @@ a.button:hover {
     padding-left: 0px;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   .navigation {
     justify-content: left;
     text-align: left;
@@ -267,7 +284,7 @@ a.button:hover {
   margin: 0px;
   float: left;
   padding: 20px;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255,255,255,0.9);
 }
 
 
