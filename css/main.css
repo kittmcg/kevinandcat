@@ -108,7 +108,7 @@ p {
 
 @media screen and (max-width: 400px) {
   h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -336,6 +336,8 @@ a.button:hover {
   display: -ms-flexbox;
   justify-content: center;
   flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .program h3 {
@@ -353,6 +355,11 @@ a.button:hover {
   font-size: 1.25rem;
   color: #eee;
   letter-spacing: 0.125rem;
+  padding-bottom: 1rem;
+}
+
+.program ul hr {
+  display: none
 }
 
 time {
@@ -362,6 +369,40 @@ time {
 
 .program i {
   padding: 0 0.5rem;
+}
+
+.fa-angle-down {
+  display: none;
+}
+
+@media only screen and (max-width : 600px)  {
+
+  .program {
+    text-align: center;
+  }
+
+  .program ul li {
+    padding-bottom: 2rem;
+  }
+
+  .program ul hr {
+    display: block;
+    border-color: rgba(255,255,255,0.1);
+    margin-bottom: 2rem;
+  }
+
+  time {
+    display: block;
+  }
+
+  .fa-angle-down {
+    display: block;
+  }
+
+  .fa-angle-right {
+    display: none;
+  }
+
 }
 
 .wrapper--music {
