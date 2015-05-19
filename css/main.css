@@ -43,7 +43,8 @@ hr {
     border: 0;
     border-top: 1px solid;
     margin: 0 auto 4rem auto;
-    width: 25%
+    width: 25%;
+    color: rgba(0,0,0,0.5);
 }
 
 audio,
@@ -82,7 +83,7 @@ h3 {
   font-style: italic;
   color: rgba(255,255,255,0.5);
   margin-top: 0px;
-  margin-bottom: 2rem
+  margin-bottom: 3rem
 }
 
 p {
@@ -131,6 +132,7 @@ p {
 a {
   color: #666;
   text-decoration: none;
+  border-bottom: 1px solid #999
 }
 
 a:hover {
@@ -177,6 +179,10 @@ a.button:hover {
   padding: 7px 0;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navigation a {
+  border-bottom: none;
 }
 
 .navigation ul li {
@@ -256,7 +262,7 @@ a.button:hover {
 }
 
 .wrapper--rsvp hr {
-  border-color: rgba(255,255,255,0.2);
+  border-color: rgba(255,255,255,0.5);
   margin-bottom: 2rem;
 }
 
@@ -266,6 +272,7 @@ a.button:hover {
 
 .wrapper--rsvp h3 a {
   color: rgba(255,255,255,0.5);
+  border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
 .wrapper--rsvp h3 a:hover {
@@ -273,10 +280,20 @@ a.button:hover {
 }
 
 .section-title--rsvp {
+  color: #FFF9A6;
   margin-top: 0;
   font-size: 5rem;
   letter-spacing: 0.25rem;
   line-height: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+   .year {
+    display: block;
+  }
+  .bullet {
+    display: none;
+  }
 }
 
 .wrapper--registry {
@@ -287,8 +304,8 @@ a.button:hover {
   display: flex;
   display: -webkit-flex;
   display: -ms-flexbox;
-  flex-direction: column;
-  -webkit-flex-direction: column;
+  flex-direction: row;
+  -webkit-flex-direction: row;
   justify-content: center;
   -webkit-justify-content: center;
   flex-wrap: wrap;
@@ -306,6 +323,7 @@ a.button:hover {
 
 .registry-item a {
   display: block;
+  border-bottom: none;
 }
 
 .registry-item:hover h2,
@@ -322,6 +340,19 @@ a.button:hover {
   color: #333;
   max-width: 60%;
   margin: 0 auto 4rem;
+}
+
+@media screen and (max-width: 600px) {
+
+  .registry-item--container {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+  }
+
+  .registry-item:first-of-type {
+    margin-bottom: 2rem ;
+  }
+
 }
 
 .wrapper--program {
@@ -441,39 +472,6 @@ time {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
 
 .clearfix:before,
 .clearfix:after {
