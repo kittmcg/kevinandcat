@@ -371,7 +371,6 @@ a.button:hover {
 }
 
 .program {
-  list-style-type: none;
   text-align: left;
   display: flex;
   display: -webkit-flex;
@@ -392,6 +391,8 @@ a.button:hover {
 .program ul {
   margin: 0 auto 2rem auto;
   padding-left: 0px;
+  list-style-type: none;
+  max-width: 420px
 }
 
 .program ul li {
