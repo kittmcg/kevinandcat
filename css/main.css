@@ -257,29 +257,29 @@ a.button:hover {
   text-align: center;
 }
 
-.wrapper--rsvp {
+.wrapper--details {
   background-color: #2B2E33;
 }
 
-.wrapper--rsvp hr {
+.wrapper--details hr {
   border-color: rgba(255,255,255,0.5);
   margin-bottom: 2rem;
 }
 
-.wrapper--rsvp p.accent {
+.wrapper--details p.accent {
     color: rgba(255,255,255,0.5);
 }
 
-.wrapper--rsvp h3 a {
+.wrapper--details h3 a {
   color: rgba(255,255,255,0.5);
   border-bottom: 1px solid rgba(255,255,255,0.3);
 }
 
-.wrapper--rsvp h3 a:hover {
+.wrapper--details h3 a:hover {
   color: rgba(255,255,255,0.7);
 }
 
-.section-title--rsvp {
+.section-title--details {
   color: #FFF9A6;
   margin-top: 0;
   font-size: 5rem;
